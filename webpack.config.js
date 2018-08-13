@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const glob = require('glob');
 
 module.exports = {
   module: {
@@ -18,6 +19,12 @@ module.exports = {
         query: {
           presets: ['env', 'react']
         }
+      },
+      {
+        test: /\.scss$/,
+        include: 'src/global',
+        enforce: 'pre',
+        loader: 'import-glob-loader'
       },
       {
         test: /\.scss$/,
