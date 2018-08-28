@@ -22,7 +22,6 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        include: 'src/global',
         enforce: 'pre',
         loader: 'import-glob-loader'
       },

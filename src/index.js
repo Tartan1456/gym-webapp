@@ -1,3 +1,3 @@
-const css = require('./app.scss');
+const css = require('./global.scss');
 
 import HomeContainer from './js/components/containers/home';
