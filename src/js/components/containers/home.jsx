@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Home from '../components/home';
+
+require('../../../global.scss');
+
 class HomeContainer extends React.Component {
   render () {
     return (
-      <h1>Smash it</h1>
+      <Home />
     )
   }
 }

@@ -1,6 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const glob = require('glob');
 
 module.exports = {
   module: {
@@ -19,11 +18,6 @@ module.exports = {
         query: {
           presets: ['env', 'react']
         }
-      },
-      {
-        test: /\.scss$/,
-        enforce: 'pre',
-        loader: 'import-glob-loader'
       },
       {
         test: /\.scss$/,
@@ -52,7 +46,7 @@ module.exports = {
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({
-      filename: "styles.css"
+      filename: "global.css"
     })
   ]
 };
