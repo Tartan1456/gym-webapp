@@ -8,10 +8,7 @@ const Home = () => (
     <Header
       title='Workouts'
     />
-    <WorkoutContainer
-      date='Fri 31 Aug'
-      muscleSet='Legs &amp; Shoulders'
-    />
+    <WorkoutContainer />
   </div>
 );
 
