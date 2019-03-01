@@ -1,0 +1,12 @@
+{
+  "workoutDay": {
+    "date": "Fri 1 Mar",
+    "day": "Legs",
+    "exercises": [{
+      "exerciseName": "SQ",
+      "sets": "5",
+      "reps": "5",
+      "weight": "30"
+    }]
+  }
+}
