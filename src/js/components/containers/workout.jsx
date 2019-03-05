@@ -4,15 +4,16 @@ import { Link } from 'react-router-dom'
 import Workout from '../components/workout';
 import Exercise from '../components/exercise';
 
-let workoutDays = require('../../../js/workoutDays.json');
-
+const workoutDays = require('../../../js/workoutDays.json');
 
 const WorkoutContainer = () => {
   return (
     <div className='workouts-wrapper'>
       {workoutDays.map((workoutDay, i) => {
+        const workoutLink = 'workout/' + workoutDay.id;
+
         return (
-          <Link key={ i } to='workoutDay'>
+          <Link key={ i } to={ workoutLink }>
             <Workout
               key={ i }
               { ...workoutDay }
